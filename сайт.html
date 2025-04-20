@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KITAYSHOP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .container {
+      padding: 1rem;
+    }
+    .category {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .category h2 {
+      margin: 0;
+      padding: 1rem;
+      background-color: #222;
+      color: #fff;
+      cursor: pointer;
+    }
+    .products {
+      display: none;
+      padding: 1rem;
+    }
+    .product {
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .contact, .payment, .feedback {
+      margin-top: 2rem;
+    }
+  </style>
+  <script>
+    function toggleProducts(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>KITAYSHOP</h1>
+  </header>
+  <div class="container">
+    <div class="category">
+      <h2 onclick="toggleProducts('uc')">UC PUBG</h2>
+      <div id="uc" class="products">
+        <div class="product">60 UC — 80.77 ₽</div>
+        <div class="product">325 UC (300+25) — 411.89 ₽</div>
+        <div class="product">660 UC (600+60) — 832.04 ₽</div>
+        <div class="product">1800 UC (1500+300) — 2103.86 ₽</div>
+        <div class="product">3850 UC (3000+850) — 4160.30 ₽</div>
+        <div class="product">6000+2100 UC — 8338.27 ₽</div>
+        <div class="product">16200 UC (12000+4200) — 16640.59 ₽</div>
+      </div>
+    </div><div class="category">
+  <h2 onclick="toggleProducts('zolo')">Чит: Zolo</h2>
+  <div id="zolo" class="products">
+    <div class="product">1 день — 170 ₽</div>
+    <div class="product">3 дня — 400 ₽</div>
+    <div class="product">7 дней — 700 ₽</div>
+    <div class="product">14 дней — 850 ₽</div>
+    <div class="product">30 дней — 1300 ₽</div>
+    <div class="product">60 дней — 1700 ₽</div>
+  </div>
+</div>
+
+<div class="category">
+  <h2 onclick="toggleProducts('blaster')">Чит: Game Blaster</h2>
+  <div id="blaster" class="products">
+    <div class="product">1 день — 200 ₽</div>
+    <div class="product">7 дней — 800 ₽</div>
+    <div class="product">30 дней — 2000 ₽</div>
+  </div>
+</div>
+
+<div class="category">
+  <h2 onclick="toggleProducts('impact')">Чит: Impact</h2>
+  <div id="impact" class="products">
+    <div class="product">1 день — 150 ₽</div>
+    <div class="product">7 дней — 777 ₽</div>
+    <div class="product">30 дней — 1700 ₽</div>
+  </div>
+</div>
+
+<div class="category">
+  <h2 onclick="toggleProducts('wolf')">Чит: Wolf Mod</h2>
+  <div id="wolf" class="products">
+    <div class="product">1 день — 120 ₽</div>
+    <div class="product">3 дня — 200 ₽</div>
+    <div class="product">7 дней — 400 ₽</div>
+    <div class="product">30 дней — 700 ₽</div>
+  </div>
+</div>
+
+<div class="category">
+  <h2 onclick="toggleProducts('inferno')">Чит: Inferno</h2>
+  <div id="inferno" class="products">
+    <div class="product">1 день — 150 ₽</div>
+    <div class="product">3 дня — 380 ₽</div>
+    <div class="product">7 дней — 800 ₽</div>
+    <div class="product">15 дней — 1000 ₽</div>
+    <div class="product">30 дней — 1300 ₽</div>
+    <div class="product">60 дней — 1800 ₽</div>
+  </div>
+</div>
+
+<div class="payment">
+  <h3>Оплата:</h3>
+  <p>Сбербанк, ЮMoney, Тинькофф или СПБ</p>
+  <p>Номер: <strong>+7 995 057 1140</strong></p>
+</div>
+
+<div class="contact">
+  <h3>Контакты:</h3>
+  <p>Телеграм канал: <a href="https://t.me/+pOT6PxTowH00YjIy" target="_blank">KITAYSHOP Telegram</a></p>
+  <p>Связь: <a href="https://t.me/CTPAXI_TBOI" target="_blank">@CTPAXI_TBOI</a></p>
+</div>
+
+<div class="feedback">
+  <h3>Отзывы:</h3>
+  <p>Вы можете оставить анонимный отзыв. Все отзывы модерируются владельцем.</p>
+</div>
+
+  </div>
+</body>
+</html>
